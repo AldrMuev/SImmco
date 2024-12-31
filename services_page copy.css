@@ -1,0 +1,237 @@
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(rgba(23, 15, 73, 0.9), rgba(255, 0, 0, 0.2)), url('/assets/hero-bg.jpg') center/cover;
+    padding: 60px 0;
+    color: white;
+}
+
+.breadcrumb {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.breadcrumb a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+.hero-section h1 {
+    font-size: 42px;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Service Overview Section */
+.service-overview {
+    padding: 60px 0;
+}
+
+.service-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: start;
+}
+
+.service-description h2 {
+    color: #e31e24;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.service-description p {
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* Button Styles */
+.cta-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.call-button {
+    padding: 12px 30px;
+    background: linear-gradient(to right, #4a5faa, #e31e24);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.book-button {
+    padding: 12px 30px;
+    background: white;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Gallery Styles */
+.gallery-wrapper {
+    position: relative;
+}
+
+.image-slider {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.slider-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.image-label {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: white;
+    padding: 5px 15px;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+.slider-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.8);
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.slider-prev {
+    left: 10px;
+}
+
+.slider-next {
+    right: 10px;
+}
+
+.slider-dots {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.dot.active {
+    background: white;
+}
+.details-section {
+    padding: 40px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.tabs-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.tab {
+    padding: 12px 40px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 16px;
+    position: relative;
+    color: #333;
+}
+
+.tab.active {
+    background: linear-gradient(to right, #4A5FAA, #E31E24);
+    color: white;
+    border-radius: 0;
+}
+
+.content-box {
+    width: 100%;
+    background: #F5F5F5;
+    padding: 30px;
+    margin-top: 20px;
+}
+
+.content-box p {
+    color: #666;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Add tab switching buttons side by side */
+.tabs-wrapper {
+    position: relative;
+}
+
+.tabs-wrapper button:first-child,
+.tabs-wrapper button:nth-child(2) {
+    display: inline-block;
+    margin-right: -4px; /* Remove gap between buttons */
+}
+
+.tab:not(.active) {
+    background: white;
+    padding: 12px 40px;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .service-content {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-section h1 {
+        font-size: 32px;
+    }
+
+    .cta-buttons {
+        flex-direction: row;
+    }
+
+    .call-button,
+    .book-button {
+        width: 100%;
+    }
+}
