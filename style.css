@@ -3479,77 +3479,56 @@ details[open] .faq-question {
       margin-top: 30px;
   }
 }
-
-.location-info {
-  padding: 60px 0;
-  background: #fff;
+.about-section {
+  padding: 80px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
  }
  
- .contact-content {
+ .about-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 40px;
-  align-items: start;
- }
- 
- .company-info h2 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-  color: #333;
- }
- 
- .provinces {
-  display: flex;
+  gap: 60px;
   align-items: center;
-  gap: 15px;
-  margin-bottom: 30px;
  }
  
- .province {
-  font-size: 1.2rem;
-  cursor: pointer;
-  opacity: 0.5;
-  transition: opacity 0.3s;
+ .about-title {
+  font-size: 48px;
+  color: #dc2626;
+  margin-bottom: 24px;
  }
  
- .province.active {
-  opacity: 1;
-  font-weight: 500;
- }
- 
- .separator {
-  color: #666;
- }
- 
- .contact-details {
+ .about-text {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 24px;
+  color: #374151;
+  line-height: 1.6;
  }
  
- .contact-icon {
-  width: 20px;
-  color: #dc2626;
-  margin-right: 15px;
- }
- 
- .contact-details a {
-  color: #333;
-  text-decoration: none;
- }
- 
- .map-container {
-  height: 400px;
+ .more-button {
+  margin-top: 24px;
+  background: #2563eb;
+  color: white;
+  padding: 12px 40px;
   border-radius: 8px;
-  overflow: hidden;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s;
+ }
+ 
+ .more-button:hover {
+  background: #1d4ed8;
+ }
+ 
+ .about-image img {
+  width: 100%;
+  border-radius: 12px;
  }
  
  @media (max-width: 768px) {
-  .contact-content {
+  .about-container {
     grid-template-columns: 1fr;
   }
-  
-  .map-container {
-    height: 300px;
-  }
  }
+ 
